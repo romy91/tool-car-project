@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <mat-icon>directions_car</mat-icon>
+  <div class="margin-left-button-menu"><span>Tool Car</span></div>
+
+  <!--Navigation buttons-->
+  <div class="margin-left-menu">
+    <button mat-button [routerLink]="'/tool-car'">
+      <mat-icon>home</mat-icon>
+      Inicio
+    </button>
+    <button mat-button [routerLink]="'/tool-car/patent-rolls-calc/calc'">
+      <mat-icon>calculate</mat-icon>
+      Cálculo de patente
+    </button>
+    <button mat-button>
+      <mat-icon>groups</mat-icon>
+      Quienes somos
+    </button>
+  </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
